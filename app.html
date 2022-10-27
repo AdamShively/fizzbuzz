@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <title>c0untr: A Coding Project By Adam Shively</title>
+    <!-- ==== Required meta tags ==== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- ==== Bootstrap ==== CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="css/site.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/New Folder/favicon-32x32.png">
+
+    <!-- ==== Google Fonts for Dosis font ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600;700;
+                800&family=Poppins:wght@400;600;800&family=Roboto+Condensed:
+                wght@700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- ==== Nav Section ==== -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand logofont" href="#"><img src="img/smalllogo.svg"  class=" d-inline-block align-text-center px-2"
+                    alt="Adam's logo" height="24">c0untr</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/app.html">The App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://adamshively.netlify.app/">My Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/AdamShively/fizzbuzz">Git Repo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ==== Main Section ==== -->
+    <main class="flex-shrink-0">
+        <div class="container mt-5 py-5">
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col col-lg-6">
+                    <h1 class="lh-1 mb-3"><span class="logofont">FizzBuzz!</span>: Please Fizz Responsibly</h1>
+                    <p class="lead">A javascript coding challenge where <span span style="font-weight: 1000;color:green;">"FizzBuzz"</span> 
+                        is displayed if input is divisible by 3 and 5, <span span style="font-weight: 1000;color:green;">"Fizz"</span> if 
+                        input is divisible by 3, and <span span style="font-weight:1000; color:green;">"Buzz"</span> if input is divisible 
+                        by 5.
+                    </p>
+                    <h2 class="mt-5 border-bottom">Instructions</h2>
+                    <p>Enter a number. Press "Display Results" button to start.</p>
+                </div>
+                <div class="col col-lg-6 border-start">
+                    <div>
+                        <div col></div>
+                        <h4>Enter Value Below</h4>
+                        <div class="row gy-2 gx-3">
+                            <div class="col">
+                                <input id="val" type="number" class="form-control" placeholder="Enter Value" min=0 value=0 aria-label="Start Value">
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button id="submitbtn" onclick="getValue()" type="button" class="btn btn-large">Display Results</button>
+                            </div>
+                        </div>
+                        <div class="alert invisible fade show mt-5" id="alert" style="background-color:lightgreen" role="alert">
+                            <h4 class="border-bottom border-dark mt-2" style="text-align: center; margin: 0 auto;max-width: 25%;margin-bottom: 15px;">
+                                Results
+                            </h4>
+                            <h4 class="alert-heading text-center" style="color:darkgreen" id="info"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer mt-auto sticky-footer bg-dark">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-lg-3 py-2">
+                <div class="col text-light d-flex align-items-center order-last order-lg-first">
+                    <div><span class="text-muted">&copy;2022</span> Adam Shively | adammshively89@gmail.com</div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center py-2">
+                    <img src="img/biglogo.svg" alt="Adam's logo" height="24">
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
+                    <div class="row ps-1">
+                        <div class="col social"><a href="https://www.linkedin.com/in/adam-shively-42162a239/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="https://github.com/AdamShively" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="https://www.youtube.com/channel/UCoyDVmowhwAFrvyqU6p4w3w" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ==== Bootstrap JS ==== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="js/site.js"></script>
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.getElementById("submitbtn").addEventListener("click", getValues)
+    </script>
+
+</body>
+
+</html>

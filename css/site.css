@@ -1,0 +1,112 @@
+main>.container {
+    padding: 60px 15px 0;
+    margin-bottom: 5rem;
+}
+
+.sticky-footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+:root {
+    --primary: green;
+    --secondary: darkgreen;
+    --dark-color: rgb(66, 64, 64);
+    --white-color: rgb(236, 233, 233);
+}
+
+body {
+    background-color:rgb(57, 61, 66);
+    color: #FFFFFF80;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.nav {
+    background-color: var(--dark-color);
+}
+
+footer {
+    background-color: var(--dark-color);
+    padding-left: rem;
+    padding-right: .2rem;
+}
+
+footer .social>a {
+    color: var(--white-color);
+    opacity: 0.75;
+}
+
+footer .social>a:hover {
+    opacity: 0.9;
+    color: var(--primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight:600;
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary);
+}
+
+.table {
+    background: rgba(255, 166, 0, 0.204);
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bsicon {
+    color: purple;
+}
+
+.jsicon {
+    color: rgb(226, 211, 4);
+}
+
+.cssicon {
+    color: var(--secondary);
+}
+
+.htmlicon {
+    color: orangered;
+}
+
+.btn {
+    background-color: var(--primary);
+}
+
+.btn:hover {
+    background-color: var(--secondary);
+}
+
+.checklist >li {
+    color: var(--primary);
+}
+
+.logofont {
+    font-family: 'Dosis', sans-serif;
+    font-size: 115%;
+}
+
+.even {
+    color: blue;
+}
+
+.odd {
+    color:red;
+}
+
+.multiple-of-ten {
+    font-weight: 1000;
+    font-style: italic;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+white-space: pre-wrap;
+word-break: break-all;
+word-wrap: break-word;
+}
